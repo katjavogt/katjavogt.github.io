@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Epistemology after Sextus Empiricus (ed.) – Katja Maria Vogt</title>
+<link rel="dns-prefetch" href="//s.w.org">
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/style.min.css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/theme.min.css" media="all">
+<link rel="stylesheet" id="twentynineteen-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/style.css" media="all">
+<link rel="stylesheet" id="twentynineteen-print-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/print.css" media="print">
+<link rel="stylesheet" id="wp-featherlight-css" href="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css" media="all">
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+
+
+
+
+
+
+
+
+	<style type="text/css" id="custom-theme-colors">
+		
+		/*
+		 * Set background for:
+		 * - featured image :before
+		 * - featured image :before
+		 * - post thumbmail :before
+		 * - post thumbmail :before
+		 * - Submenu
+		 * - Sticky Post
+		 * - buttons
+		 * - WP Block Button
+		 * - Blocks
+		 */
+		.image-filters-enabled .site-header.featured-image .site-featured-image:before,
+		.image-filters-enabled .site-header.featured-image .site-featured-image:after,
+		.image-filters-enabled .entry .post-thumbnail:before,
+		.image-filters-enabled .entry .post-thumbnail:after,
+		.main-navigation .sub-menu,
+		.sticky-post,
+		.entry .entry-content .wp-block-button .wp-block-button__link:not(.has-background),
+		.entry .button, button, input[type="button"], input[type="reset"], input[type="submit"],
+		.entry .entry-content > .has-primary-background-color,
+		.entry .entry-content > *[class^="wp-block-"].has-primary-background-color,
+		.entry .entry-content > *[class^="wp-block-"] .has-primary-background-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-primary-background-color,
+		.entry .entry-content .wp-block-file .wp-block-file__button {
+			background-color: hsl( 326, 100%, 33% ); /* base: #0073a8; */
+		}
+
+		/*
+		 * Set Color for:
+		 * - all links
+		 * - main navigation links
+		 * - Post navigation links
+		 * - Post entry meta hover
+		 * - Post entry header more-link hover
+		 * - main navigation svg
+		 * - comment navigation
+		 * - Comment edit link hover
+		 * - Site Footer Link hover
+		 * - Widget links
+		 */
+		a,
+		a:visited,
+		.main-navigation .main-menu > li,
+		.main-navigation ul.main-menu > li > a,
+		.post-navigation .post-title,
+		.entry .entry-meta a:hover,
+		.entry .entry-footer a:hover,
+		.entry .entry-content .more-link:hover,
+		.main-navigation .main-menu > li > a + svg,
+		.comment .comment-metadata > a:hover,
+		.comment .comment-metadata .comment-edit-link:hover,
+		#colophon .site-info a:hover,
+		.widget a,
+		.entry .entry-content .wp-block-button.is-style-outline .wp-block-button__link:not(.has-text-color),
+		.entry .entry-content > .has-primary-color,
+		.entry .entry-content > *[class^="wp-block-"] .has-primary-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-primary-color p {
+			color: hsl( 326, 100%, 33% ); /* base: #0073a8; */
+		}
+
+		/*
+		 * Set border color for:
+		 * wp block quote
+		 * :focus
+		 */
+		blockquote,
+		.entry .entry-content blockquote,
+		.entry .entry-content .wp-block-quote:not(.is-large),
+		.entry .entry-content .wp-block-quote:not(.is-style-large),
+		input[type="text"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="password"]:focus,
+		input[type="search"]:focus,
+		input[type="number"]:focus,
+		input[type="tel"]:focus,
+		input[type="range"]:focus,
+		input[type="date"]:focus,
+		input[type="month"]:focus,
+		input[type="week"]:focus,
+		input[type="time"]:focus,
+		input[type="datetime"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="color"]:focus,
+		textarea:focus {
+			border-color: hsl( 326, 100%, 33% ); /* base: #0073a8; */
+		}
+
+		.gallery-item > div > a:focus {
+			box-shadow: 0 0 0 2px hsl( 326, 100%, 33% ); /* base: #0073a8; */
+		}
+
+		/* Hover colors */
+		a:hover, a:active,
+		.main-navigation .main-menu > li > a:hover,
+		.main-navigation .main-menu > li > a:hover + svg,
+		.post-navigation .nav-links a:hover,
+		.post-navigation .nav-links a:hover .post-title,
+		.author-bio .author-description .author-link:hover,
+		.entry .entry-content > .has-secondary-color,
+		.entry .entry-content > *[class^="wp-block-"] .has-secondary-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-secondary-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color blockquote.has-secondary-color p,
+		.comment .comment-author .fn a:hover,
+		.comment-reply-link:hover,
+		.comment-navigation .nav-previous a:hover,
+		.comment-navigation .nav-next a:hover,
+		#cancel-comment-reply-link:hover,
+		.widget a:hover {
+			color: hsl( 326, 100%, 23% ); /* base: #005177; */
+		}
+
+		.main-navigation .sub-menu > li > a:hover,
+		.main-navigation .sub-menu > li > a:focus,
+		.main-navigation .sub-menu > li > a:hover:after,
+		.main-navigation .sub-menu > li > a:focus:after,
+		.main-navigation .sub-menu > li > .menu-item-link-return:hover,
+		.main-navigation .sub-menu > li > .menu-item-link-return:focus,
+		.main-navigation .sub-menu > li > a:not(.submenu-expand):hover,
+		.main-navigation .sub-menu > li > a:not(.submenu-expand):focus,
+		.entry .entry-content > .has-secondary-background-color,
+		.entry .entry-content > *[class^="wp-block-"].has-secondary-background-color,
+		.entry .entry-content > *[class^="wp-block-"] .has-secondary-background-color,
+		.entry .entry-content > *[class^="wp-block-"].is-style-solid-color.has-secondary-background-color {
+			background-color: hsl( 326, 100%, 23% ); /* base: #005177; */
+		}
+
+		/* Text selection colors */
+		::selection {
+			background-color: hsl( 326, 50%, 90% ); /* base: #005177; */
+		}
+		::-moz-selection {
+			background-color: hsl( 326, 50%, 90% ); /* base: #005177; */
+		}	</style>
+			<style id="wp-custom-css">
+			
+* {
+	font-family: Times, serif !important;
+	font-size: 99%;
+	color: white !important;
+	border: none;
+}
+
+body {
+	background-color: #222 !important;
+}
+
+.sub-menu {
+	background-color: #333 !important;
+}
+
+.search-submit {
+	color: #555;
+}
+
+.wp-block-file a.wp-block-file__button:active, .wp-block-file a.wp-block-file__button:focus, .wp-block-file a.wp-block-file__button:hover, .wp-block-file a.wp-block-file__button:visited {
+    background-color: #333 !important;
+}
+
+#playPause {
+	display: none !important;
+}
+
+.site-info {
+	display: none;
+}
+
+.textwidget {
+    font-size: 80%;
+    opacity: .6;
+}
+
+/* Lightbox */
+
+.caption {
+	margin-top: 12px;
+	color: #888 !important;
+}
+
+/* Override sticky fonts in Placeholder text color -- selectors need to be separate to work. */
+
+.search-field {
+	color: #555 !important;
+}
+		</style>
+		</head>
+
+<body class="page-template-default page page-id-425 wp-embed-responsive wp-featherlight-captions singular">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header featured-image">
+
+			<div class="site-branding-container">
+				<div class="site-branding">
+
+								<p class="site-title"><a href="https://katjavogt.github.io/" rel="home">Katja Maria Vogt</a></p>
+			
+				<p class="site-description">
+				Professor of Philosophy Columbia University			</p>
+				<nav id="site-navigation" class="main-navigation" aria-label="Top Menu">
+			<div class="menu-kmv-container"><ul id="menu-kmv" class="main-menu"><li id="menu-item-52" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-52"><a href="#" aria-haspopup="true" aria-expanded="false">About</a><button class="submenu-expand" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></button>
+<ul class="sub-menu">
+	<li id="menu-item--1" class="mobile-parent-nav-menu-item menu-item--1"><button class="menu-item-link-return" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>About</button></li>
+	<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-50"><a href="https://katjavogt.github.io/">Interests</a></li>
+	<li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58"><a href="https://katjavogt.github.io/in-conversation/">In Conversation</a></li>
+	<li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://katjavogt.github.io/movies-and-morals/">Movies and Morals</a></li>
+	<li id="menu-item-400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400"><a href="https://katjavogt.github.io/on-the-road/">On the Road</a></li>
+	<li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-417"><a href="https://katjavogt.github.io/cv/">CV</a></li>
+	<li id="menu-item-562" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-562"><a href="https://katjavogt.github.io/contact/">Contact</a></li>
+</ul>
+</li>
+<li id="menu-item-418" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-418"><a href="#" aria-haspopup="true" aria-expanded="false">Books</a><button class="submenu-expand" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></button>
+<ul class="sub-menu">
+	<li id="menu-item--2" class="mobile-parent-nav-menu-item menu-item--2"><button class="menu-item-link-return" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Books</button></li>
+	<li id="menu-item-439" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-425 current_page_item menu-item-439"><a href="https://katjavogt.github.io/epistemology-after-sextus-empiricus-ed/" aria-current="page">Epistemology after Sextus Empiricus (ed.)</a></li>
+	<li id="menu-item-438" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-438"><a href="https://katjavogt.github.io/ancient-skepticism/">Ancient Skepticism</a></li>
+	<li id="menu-item-437" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-437"><a href="https://katjavogt.github.io/desiring-the-good/">Desiring the Good</a></li>
+	<li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://katjavogt.github.io/pyrrhonian-skepticism-in-diogenes-laertius-ed/">Pyrrhonian Skepticism in Diogenes Laertius (ed.)</a></li>
+	<li id="menu-item-450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-450"><a href="https://katjavogt.github.io/belief-and-truth/">Belief and Truth</a></li>
+	<li id="menu-item-462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-462"><a href="https://katjavogt.github.io/law-reason-and-the-cosmic-city/">Law, Reason, and the Cosmic City</a></li>
+	<li id="menu-item-461" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-461"><a href="https://katjavogt.github.io/skepsis-und-lebenspraxis/">Skepsis und Lebenspraxis</a></li>
+</ul>
+</li>
+<li id="menu-item-419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-419"><a href="#" aria-haspopup="true" aria-expanded="false">Papers</a><button class="submenu-expand" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></button>
+<ul class="sub-menu">
+	<li id="menu-item--3" class="mobile-parent-nav-menu-item menu-item--3"><button class="menu-item-link-return" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Papers</button></li>
+	<li id="menu-item-473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-473"><a href="https://katjavogt.github.io/selected-papers/">Selected Papers</a></li>
+	<li id="menu-item-569" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-569"><a href="https://katjavogt.github.io/introductions/">Introductions</a></li>
+	<li id="menu-item-568" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-568"><a href="https://katjavogt.github.io/discussion-articles-and-reviews/">Discussion Articles and Reviews</a></li>
+</ul>
+</li>
+<li id="menu-item-420" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-420"><a href="#" aria-haspopup="true" aria-expanded="false">Workshops</a><button class="submenu-expand" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></button>
+<ul class="sub-menu">
+	<li id="menu-item--4" class="mobile-parent-nav-menu-item menu-item--4"><button class="menu-item-link-return" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Workshops</button></li>
+	<li id="menu-item-578" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-578"><a href="https://katjavogt.github.io/workshop-in-ancient-and-contemporary-philosophy/">Workshop in Ancient and Contemporary Philosophy</a></li>
+	<li id="menu-item-577" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-577"><a href="https://katjavogt.github.io/summer-and-winter/">Summer and Winter</a></li>
+	<li id="menu-item-576" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-576"><a href="https://katjavogt.github.io/past-events/">Past Events</a></li>
+</ul>
+</li>
+<li id="menu-item-421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-421"><a href="#" aria-haspopup="true" aria-expanded="false">Students</a><button class="submenu-expand" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path fill="none" d="M0 0h24v24H0V0z"></path></svg></button>
+<ul class="sub-menu">
+	<li id="menu-item--5" class="mobile-parent-nav-menu-item menu-item--5"><button class="menu-item-link-return" tabindex="-1"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Students</button></li>
+	<li id="menu-item-587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-587"><a href="https://katjavogt.github.io/phd-current-and-former-students/">PhD Current and Former Students</a></li>
+	<li id="menu-item-586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-586"><a href="https://katjavogt.github.io/phd-external-references/">PhD External References</a></li>
+	<li id="menu-item-585" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-585"><a href="https://katjavogt.github.io/syllabi/">Syllabi</a></li>
+</ul>
+</li>
+</ul></div>
+			<div class="main-menu-more">
+				<ul class="main-menu">
+					<li class="menu-item menu-item-has-children">
+						<button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1" aria-label="More" aria-haspopup="true" aria-expanded="false"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path fill="currentColor" fill-rule="nonzero" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm6 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path></g></svg>
+						</button>
+						<ul class="sub-menu hidden-links">
+							<li class="mobile-parent-nav-menu-item">
+								<button class="menu-item-link-return"><svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>Back
+								</button>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>		</nav>
+		</div>
+			</div>
+
+							<div class="site-featured-image">
+					
+			<figure class="post-thumbnail">
+				<img width="1568" height="941" src="https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-1568x941.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-1568x941.jpg 1568w,https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-300x180.jpg 300w,https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-1024x614.jpg 1024w,https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-768x461.jpg 768w,https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas-1536x922.jpg 1536w,https://katjavogt.github.io/wp-content/uploads/header-kmv-giraffe-by-jens-haas.jpg 2000w" sizes="(max-width: 1568px) 100vw, 1568px">			</figure>
+
+								<div class="entry-header">
+						
+<h1 class="entry-title">Epistemology after Sextus Empiricus (ed.)</h1>
+					</div>
+									</div>
+					</header>
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main">
+
+			
+<article id="post-425" class="post-425 page type-page status-publish has-post-thumbnail hentry entry">
+	
+	<div class="entry-content">
+		
+<p><a href="https://global.oup.com/academic/product/epistemology-after-sextus-empiricus-9780190946302?cc=de&lang=en&#"><em>Epistemology after Sextus Empiricus</em> (OUP, 2020)</a>. Edited by Katja Maria Vogt and <a href="https://sites.google.com/site/vlasits/">Justin Vlasits</a>. Contributors: Jessica N. Berry, Richard Bett, Megan Feeney, Don Garrett, Kathrin Glüer, Jens Haas, Marko Malink, MGF Martin, John Morrison, Peter Pagin, Duncan Pritchard, Susanna Schellenberg, Kathryn Tabb, Sergio Tenenbaum, Justin Vlasits, Katja Maria Vogt</p>
+
+
+
+<div class="wp-block-image is-style-default"><figure class="alignleft size-medium"><img src="https://katjavogt.github.io/wp-content/uploads/book-vogt-vlasits-ed-epistemology-after-sextus-197x300.jpg" alt="" class="wp-image-699" srcset="https://katjavogt.github.io/wp-content/uploads/book-vogt-vlasits-ed-epistemology-after-sextus-197x300.jpg 197w,https://katjavogt.github.io/wp-content/uploads/book-vogt-vlasits-ed-epistemology-after-sextus.jpg 300w" sizes="(max-width: 197px) 100vw, 197px"></figure></div>
+
+
+
+<p>Sextus Empiricus was the voice of ancient Greek skepticism for posterity. His writings contain the most subtle and detailed versions of the ancient skeptical arguments known as Pyrrhonism, adding up to a distinctive philosophical approach. Instead of viewing philosophy as valuable because of the answers it gives to important questions, Sextus considered the search for answers itself to be fundamental and offered a philosophy centered on inquiry. Assuming the point of view of an active inquirer, Sextus developed arguments concerning conflicting appearances, infinite regress in argument, dogmatic assertion of premises that are insufficiently justified, and many other ideas that fascinated later philosophers of knowledge across the centuries. He provided a unique perspective on topics of enduring relevance such as perception, language, logical consequence, belief, ignorance, disagreement, and induction.</p>
+
+
+
+<p>While Sextus’s importance to epistemology was appreciated by early modern and modern philosophers, he is underrepresented in contemporary discussions. In order to put Sextus back in the center of epistemology, these essays discuss his influence in the history of modern philosophy as well as contemporary engagements with Sextus’s version of Pyrrhonian skepticism. The contributors investigate epistemology after Sextus, addressing four core themes of Sextus’s skepticism: appearances and perception, the structure of justification and proof, belief and ignorance, and ethics and action. The arguments presented here bridge the divide between contemporary and ancient debates about knowledge and skepticism and will appeal to philosophers interested in epistemology and philosophy of mind as well as those interested in ancient philosophy and the history of philosophy more generally.</p>
+	</div>
+
+	</article>
+
+		</main>
+	</div>
+
+
+	</div>
+
+	<footer id="colophon" class="site-footer">
+		
+	<aside class="widget-area" role="complementary" aria-label="Footer">
+							<div class="widget-column footer-widget-1">
+					<section id="text-2" class="widget widget_text">			<div class="textwidget"><p>Copyright 2020 Katja Vogt.</p>
+<p>All images Copyright Jens Haas.</p>
+<p>Built by <a href="https://www.jenshaas.com/">Jens Haas</a>.</p>
+</div>
+		</section>					</div>
+					</aside>
+
+		<div class="site-info">
+										<a class="site-name" href="https://katjavogt.github.io/" rel="home">Katja Maria Vogt</a>,
+						<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress.			</a>
+								</div>
+	</footer>
+
+</div>
+
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/priority-menu.js"></script>
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js"></script>
+	<script>
+	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
+	</script>
+	
+</body>
+</html>
