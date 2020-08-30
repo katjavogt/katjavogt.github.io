@@ -165,7 +165,7 @@ body.page .main-navigation {display: block;}
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand svg {top: 0;}
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {margin-right: 0;}
 @media only screen and (min-width: 768px) {.main-navigation .sub-menu > li.menu-item-has-children .menu-item-has-children > a:after {content: "›";}}
-.main-navigation .sub-menu > li > a, .main-navigation .sub-menu > li > .menu-item-link-return {color: #fff;display: block;line-height: 1.2;text-shadow: none;padding: calc(.5 * 1rem) calc(24px + 1rem) calc(.5 * 1rem) 1rem;white-space: nowrap;}
+.main-navigation .sub-menu > li > a, .main-navigation .sub-menu > li > .menu-item-link-return {color: #fff;display: block;line-height: 1.2;text-shadow: none;padding: calc(.5 * 1rem) calc(24px + 1rem) calc(.5 * 1rem) 1rem;max-width: 20rem;}
 .main-navigation .sub-menu > li > a:hover, .main-navigation .sub-menu > li > a:focus, .main-navigation .sub-menu > li > .menu-item-link-return:hover, .main-navigation .sub-menu > li > .menu-item-link-return:focus {background: #005177;}
 .main-navigation .sub-menu > li > a:hover:after, .main-navigation .sub-menu > li > a:focus:after, .main-navigation .sub-menu > li > .menu-item-link-return:hover:after, .main-navigation .sub-menu > li > .menu-item-link-return:focus:after {background: #005177;}
 .main-navigation .sub-menu > li > .menu-item-link-return {width: 100%;font-size: 22px;font-weight: normal;text-align: left;}
@@ -578,6 +578,7 @@ body.page .main-navigation {display: block;}
 .entry .entry-content .wp-block-preformatted {font-size: .71111em;line-height: 1.8;padding: 1rem;}
 .entry .entry-content .wp-block-verse {font-family: "NonBreakingSpaceOverride","Hoefler Text",Garamond,"Times New Roman",serif;font-size: 22px;line-height: 1.8;}
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;font-size: 3.375em;line-height: 1;font-weight: bold;margin: 0 .25em 0 0;}
+@-moz-document url-prefix() {.entry .entry-content .has-drop-cap:not(:focus):first-letter {margin-top: .2em;}}
 .entry .entry-content .wp-block-pullquote {border-color: transparent;border-width: 2px;padding: 1rem;}
 .entry .entry-content .wp-block-pullquote blockquote {color: #111;border: none;margin-top: calc(4 * 1rem);margin-bottom: calc(4.33 * 1rem);margin-right: 0;padding-left: 0;}
 .entry .entry-content .wp-block-pullquote p {font-size: 1.6875em;font-style: italic;line-height: 1.3;margin-bottom: .5em;margin-top: .5em;}
@@ -633,6 +634,9 @@ body.page .main-navigation {display: block;}
 .entry .entry-content .wp-block-gallery figcaption a {color: #fff;}
 .entry .entry-content .wp-block-audio figcaption, .entry .entry-content .wp-block-video figcaption, .entry .entry-content .wp-block-image figcaption, .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption, .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {font-size: .71111em;font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;line-height: 1.6;margin: 0;padding: .5rem;text-align: center;}
 .entry .entry-content .wp-block-separator, .entry .entry-content hr {background-color: #767676;border: 0;height: 2px;margin-bottom: 2rem;margin-top: 2rem;max-width: 2.25em;text-align: left;}
+.entry .entry-content .wp-block-separator:not(.wp-block-separator), .entry .entry-content hr:not(.wp-block-separator) {max-width: 100%;}
+@media only screen and (min-width: 768px) {.entry .entry-content .wp-block-separator:not(.wp-block-separator), .entry .entry-content hr:not(.wp-block-separator) {max-width: calc(8 * ( 100vw / 12 ) - 28px);}}
+@media only screen and (min-width: 1168px) {.entry .entry-content .wp-block-separator:not(.wp-block-separator), .entry .entry-content hr:not(.wp-block-separator) {max-width: calc(6 * ( 100vw / 12 ) - 28px);}}
 .entry .entry-content .wp-block-separator.is-style-wide, .entry .entry-content hr.is-style-wide {max-width: 100%;}
 @media only screen and (min-width: 768px) {.entry .entry-content .wp-block-separator.is-style-wide, .entry .entry-content hr.is-style-wide {max-width: calc(8 * ( 100vw / 12 ) - 28px);}}
 @media only screen and (min-width: 1168px) {.entry .entry-content .wp-block-separator.is-style-wide, .entry .entry-content hr.is-style-wide {max-width: calc(6 * ( 100vw / 12 ) - 28px);}}

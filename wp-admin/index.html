@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
-	
+<html lang="en-US">
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Log In ‹ Katja Maria Vogt — WordPress</title>
@@ -45,8 +44,8 @@
 		</form>
 
 					<p id="nav">
-									<a href="https://katjavogt.github.io/wp-login.php">Lost your password?</a>
-								</p>
+								<a href="https://katjavogt.github.io/wp-login.php">Lost your password?</a>
+			</p>
 					<script type="text/javascript">
 			function wp_attempt_focus() {setTimeout( function() {try {d = document.getElementById( "user_login" );d.focus(); d.select();} catch( er ) {}}, 200);}
 wp_attempt_focus();
@@ -54,25 +53,40 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
 				<p id="backtoblog"><a href="https://katjavogt.github.io/">
 		← Back to Katja Maria Vogt		</a></p>
 			</div>
-	<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js"></script>
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script>
-<script>
+	<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js" id="jquery-js"></script>
+<script id="zxcvbn-async-js-extra">
 var _zxcvbnSettings = {"src":"https:\/\/katjavogt.github.io\/wp-includes\/js\/zxcvbn.min.js"};
 </script>
-<script src="https://katjavogt.github.io/wp-includes/js/zxcvbn-async.min.js"></script>
-<script>
+<script src="https://katjavogt.github.io/wp-includes/js/zxcvbn-async.min.js" id="zxcvbn-async-js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+<script id="wp-polyfill-js-after">
+( 'fetch' in window ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://katjavogt.github.io/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );
+</script>
+<script src="https://katjavogt.github.io/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<script id="password-strength-meter-js-extra">
 var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
 </script>
-<script src="https://katjavogt.github.io/wp-admin/js/password-strength-meter.min.js"></script>
-<script src="https://katjavogt.github.io/wp-includes/js/underscore.min.js"></script>
-<script>
+<script id="password-strength-meter-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script src="https://katjavogt.github.io/wp-admin/js/password-strength-meter.min.js" id="password-strength-meter-js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/underscore.min.js" id="underscore-js"></script>
+<script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 </script>
-<script src="https://katjavogt.github.io/wp-includes/js/wp-util.min.js"></script>
-<script>
-var userProfileL10n = {"warn":"Your new password has not been saved.","warnWeak":"Confirm use of weak password","show":"Show","hide":"Hide","cancel":"Cancel","ariaShow":"Show password","ariaHide":"Hide password"};
+<script src="https://katjavogt.github.io/wp-includes/js/wp-util.min.js" id="wp-util-js"></script>
+<script id="user-profile-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
 </script>
-<script src="https://katjavogt.github.io/wp-admin/js/user-profile.min.js"></script>
+<script src="https://katjavogt.github.io/wp-admin/js/user-profile.min.js" id="user-profile-js"></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>

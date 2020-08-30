@@ -11,18 +11,22 @@
 
 <link rel="stylesheet" id="wp-block-library-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/style.min.css" media="all">
 <link rel="stylesheet" id="wp-block-library-theme-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/theme.min.css" media="all">
+<link rel="stylesheet" id="vpf-twentynineteen-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/theme-twentynineteen.min.css" media="all">
 <link rel="stylesheet" id="twentynineteen-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/style.css" media="all">
 <link rel="stylesheet" id="twentynineteen-print-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/print.css" media="print">
 <link rel="stylesheet" id="wp-featherlight-css" href="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css" media="all">
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js"></script>
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js" id="jquery-js"></script>
 
 
 
 
 
 
-
+<script type="text/javascript">
+/* <![CDATA[ */
+var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":false,"vendor":"photoswipe","show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_download_button":false,"show_slideshow":false,"show_thumbs":true},"screenSizes":[320,576,768,992,1200]};
+/* ]]> */
+</script>
 
 	<style type="text/css" id="custom-theme-colors">
 		
@@ -213,6 +217,13 @@ body {
 .search-field {
 	color: #555 !important;
 }
+
+.post-edit-link {
+	display: none;
+}
+.vp-portfolio__item-meta-title {
+	font-size: 99% !important;
+}
 		</style>
 		</head>
 
@@ -331,7 +342,7 @@ body {
 		
 <div class="discussion-meta">
 	<ol class="discussion-avatar-list">
-<li><div class="comment-user-avatar comment-author vcard"><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=60&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&d=mm&r=g 2x" class="avatar avatar-60 photo" height="60" width="60"></div></li>
+<li><div class="comment-user-avatar comment-author vcard"><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=60&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&d=mm&r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy"></div></li>
 </ol>
 	<p class="discussion-meta-info">
 		<svg class="svg-icon" width="24" height="24" aria-hidden="true" role="img" focusable="false" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>		<span>1 Comment</span>
@@ -343,7 +354,7 @@ body {
 			<article id="div-comment-1" class="comment-body">
 				<footer class="comment-meta">
 					<div class="comment-author vcard">
-						<a href="https://wordpress.org/" rel="external nofollow" class="url"><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=60&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&d=mm&r=g 2x" class="avatar avatar-60 photo" height="60" width="60"><b class="fn">A WordPress Commenter</b> <span class="screen-reader-text says">says:</span></a>					</div>
+						<a href="https://wordpress.org/" rel="external nofollow" class="url"><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=60&d=mm&r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=120&d=mm&r=g 2x" class="avatar avatar-60 photo" height="60" width="60" loading="lazy"><b class="fn">A WordPress Commenter</b> <span class="screen-reader-text says">says:</span></a>					</div>
 
 					<div class="comment-metadata">
 						<a href="https://katjavogt.github.io/hello-world/#comment-1">
@@ -364,7 +375,7 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.</p>
 
 			</article>
 
-			<div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="https://katjavogt.github.io/hello-world/" data-commentid="1" data-postid="1" data-belowelement="div-comment-1" data-respondelement="respond" aria-label="Reply to A WordPress Commenter">Reply</a></div>		</li>
+			<div class="comment-reply"><a rel="nofollow" class="comment-reply-link" href="https://katjavogt.github.io/hello-world/" data-commentid="1" data-postid="1" data-belowelement="div-comment-1" data-respondelement="respond" data-replyto="Reply to A WordPress Commenter" aria-label="Reply to A WordPress Commenter">Reply</a></div>		</li>
 		</ol>
 					<div class="comment-form-flex">
 				<span class="screen-reader-text">Leave a comment</span>
@@ -406,9 +417,9 @@ Commenter avatars come from <a href="https://gravatar.com">Gravatar</a>.</p>
 
 </div>
 
-<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/priority-menu.js"></script>
-<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js"></script>
-<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js"></script>
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/priority-menu.js" id="twentynineteen-priority-menu-js"></script>
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js" id="twentynineteen-touch-navigation-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js" id="wp-featherlight-js"></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>

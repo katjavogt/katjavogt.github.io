@@ -10,18 +10,22 @@
 
 <link rel="stylesheet" id="wp-block-library-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/style.min.css" media="all">
 <link rel="stylesheet" id="wp-block-library-theme-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/theme.min.css" media="all">
+<link rel="stylesheet" id="vpf-twentynineteen-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/theme-twentynineteen.min.css" media="all">
 <link rel="stylesheet" id="twentynineteen-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/style.css" media="all">
 <link rel="stylesheet" id="twentynineteen-print-style-css" href="https://katjavogt.github.io/wp-content/themes/twentynineteen/print.css" media="print">
 <link rel="stylesheet" id="wp-featherlight-css" href="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css" media="all">
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js"></script>
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.js" id="jquery-js"></script>
 
 
 
 
 
 
-
+<script type="text/javascript">
+/* <![CDATA[ */
+var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":false,"vendor":"photoswipe","show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_download_button":false,"show_slideshow":false,"show_thumbs":true},"screenSizes":[320,576,768,992,1200]};
+/* ]]> */
+</script>
 
 	<style type="text/css" id="custom-theme-colors">
 		
@@ -212,6 +216,13 @@ body {
 .search-field {
 	color: #555 !important;
 }
+
+.post-edit-link {
+	display: none;
+}
+.vp-portfolio__item-meta-title {
+	font-size: 99% !important;
+}
 		</style>
 		</head>
 
@@ -297,7 +308,7 @@ body {
 							<div class="site-featured-image">
 					
 			<figure class="post-thumbnail">
-				<img width="1568" height="941" src="https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1568x941.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1568x941.jpg 1568w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-300x180.jpg 300w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1024x614.jpg 1024w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-768x461.jpg 768w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1536x922.jpg 1536w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas.jpg 2000w" sizes="(max-width: 1568px) 100vw, 1568px">			</figure>
+				<img width="1568" height="941" src="https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1568x941.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1568x941.jpg 1568w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-300x180.jpg 300w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1024x614.jpg 1024w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-768x461.jpg 768w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas-1536x922.jpg 1536w,https://katjavogt.github.io/wp-content/uploads/header-kmv-turkey1-by-jens-haas.jpg 2000w" sizes="(max-width: 1568px) 100vw, 1568px">			</figure>
 
 								<div class="entry-header">
 						
@@ -316,19 +327,55 @@ body {
 	
 	<div class="entry-content">
 		
-<h2>Munich New York City Workshop in Ethics</h2>
+<h2>Research Group in Ancient and Contemporary Philosophy</h2>
 
 
 
-<p>NYC, March 7 and 8 2020, Philosophy Hall 716. Details TBA.</p>
+<p>Three online workshops in August 2020. PhD students present work in progress, and offer peer feedback. For details please see below.</p>
 
 
 
-<p>The Munich New York City annual Workshop in Ethics aims to bring together Junior Researchers from Ludwig-Maximilians-Universität and Columbia University.</p>
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img loading="lazy" width="450" height="685" src="https://katjavogt.github.io/wp-content/uploads/poster-vogt-reearch-group-2020-by-jens-haas-web.jpg" alt="" class="wp-image-1383"></figure></div>
 
 
 
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://katjavogt.github.io/wp-content/uploads/poster-betzler-vogt-workshop-nyc-2020-by-jens-haas.jpg" alt="" class="wp-image-1108" srcset="https://katjavogt.github.io/wp-content/uploads/poster-betzler-vogt-workshop-nyc-2020-by-jens-haas.jpg 450w,https://katjavogt.github.io/wp-content/uploads/poster-betzler-vogt-workshop-nyc-2020-by-jens-haas-197x300.jpg 197w" sizes="(max-width: 450px) 100vw, 450px"></figure></div>
+<p><em>Tuesday August 18 EST Zoom</em></p>
+
+
+
+<p>9:30-10:30: <strong>Luke Lea</strong>, “Knowledge of Good and Bad in Plato’s <em>Charmides</em>” with comments by <strong>Anthony Hejduk</strong></p>
+
+
+
+<p>10:45-11:45: <strong>Natalie Hannan</strong>, “Epistēmē and the Good Life in Plato’s <em>Protagoras</em>” with comments by <strong>Abby Breuker</strong></p>
+
+
+
+<p><em>Saturday August 22 EST Zoom</em></p>
+
+
+
+<p>10:00-10:50: <strong>Mariana Beatriz Noé</strong>, “On being more-or-less virtuous.” </p>
+
+
+
+<p>10:50-11:30: <strong>Margaret Corn</strong>,  “Harmony of the Spheres: Math, Music, and Astronomy in Plato’s <em>Timaeus</em>”</p>
+
+
+
+<p>11:30-12:20: <strong>Molly Gurdon Pinkoski</strong>, “Practical Thinking and Absolute Wrongs”</p>
+
+
+
+<p><em>Tuesday August 27 EST Zoom</em></p>
+
+
+
+<p>10:30-11:20: <strong>Qian Cao</strong>, “Language and Reality in <em>Cratylus</em>: Correctness as Imitation”</p>
+
+
+
+<p>11:30-12:10: <strong>Jake Haagenson</strong>, “How does Plato’s characterization of “Timaeus” figure into the philosophical arguments of the <em>Timaeus</em>?”</p>
 
 
 
@@ -341,50 +388,6 @@ body {
 
 
 <p>This workshop brings together junior researchers at the Maimonides Center for Advanced Studies as well as graduate students from Hamburg University and graduate students from Columbia University.</p>
-
-
-
-<h2>Research Group in Ancient and Contemporary Philosophy</h2>
-
-
-
-<p>Two online workshops in July and August 2019. PhD students present work in progress, and offer peer feedback. For details please see below.</p>
-
-
-
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://katjavogt.github.io/wp-content/uploads/poster-vogt-research-group-2019-20-by-jens-haas.jpg" alt="" class="wp-image-1122" srcset="https://katjavogt.github.io/wp-content/uploads/poster-vogt-research-group-2019-20-by-jens-haas.jpg 450w,https://katjavogt.github.io/wp-content/uploads/poster-vogt-research-group-2019-20-by-jens-haas-197x300.jpg 197w" sizes="(max-width: 450px) 100vw, 450px"></figure></div>
-
-
-
-<p><em>Saturday July 27 EST Zoom</em></p>
-
-
-
-<p>9:30-10:30 <strong>Natalie Hannan</strong>, “Knowledge and Voluntary Injustice in the <em>Hippias Minor</em>”</p>
-
-
-
-<p>11-12 <strong>Luke Lea</strong>, “The Non-rationality of Sense Perceptions for Epicurus”</p>
-
-
-
-<p>12:30-1:30 <strong>Helen Zhao</strong>, “Values in Scientists”</p>
-
-
-
-<p><em>Saturday August 8 2019 EST Zoom</em></p>
-
-
-
-<p>9:30-10:30 <strong>Mariana Beatriz Noé</strong>, “Continuous Assessment in Plato’s Laws: infants, citizens, and magistrates”</p>
-
-
-
-<p>11-12 <strong>Qian Cao</strong>, “The Skeptics’ Non-Doxastic Assent as An Alternative to Holding Dogmata—A Reading Through the Lens of Plato”</p>
-
-
-
-<p>12:30-1:30 <strong>Molly Gurdon</strong>, “Anscombe on the Evaluation of Action”</p>
 
 
 
@@ -423,9 +426,9 @@ body {
 
 </div>
 
-<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/priority-menu.js"></script>
-<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js"></script>
-<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js"></script>
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/priority-menu.js" id="twentynineteen-priority-menu-js"></script>
+<script src="https://katjavogt.github.io/wp-content/themes/twentynineteen/js/touch-keyboard-navigation.js" id="twentynineteen-touch-navigation-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js" id="wp-featherlight-js"></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 	</script>
