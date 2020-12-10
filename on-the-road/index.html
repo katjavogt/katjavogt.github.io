@@ -17,6 +17,11 @@
 <link rel="stylesheet" id="simplebar-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/simplebar/dist/simplebar.min.css" media="all">
 <link rel="stylesheet" id="visual-portfolio-custom-scrollbar-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/custom-scrollbar.min.css" media="all">
 <link rel="stylesheet" id="visual-portfolio-lazyload-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/lazyload.min.css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.css" media="all">
+<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/popup-fancybox.min.css" media="all">
+<style id="visual-portfolio-popup-fancybox-inline-css">
+.vp-fancybox .fancybox-bg { background-color: #1e1e1e; }
+</style>
 <link rel="stylesheet" id="visual-portfolio-items-style-fade-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/templates/items-list/items-style/fade/style.min.css" media="all">
 <link rel="stylesheet" id="visual-portfolio-notices-default-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/templates/notices/style.min.css" media="all">
 <link rel="stylesheet" id="wp-block-library-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/style.min.css" media="all">
@@ -35,7 +40,7 @@
 
 <script type="text/javascript">
 /* <![CDATA[ */
-var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":false,"vendor":"photoswipe","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true},"screenSizes":[320,576,768,992,1200]};
+var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true},"screenSizes":[320,576,768,992,1200]};
 /* ]]> */
 </script>
 
@@ -333,7 +338,7 @@ body {
 							<div class="site-featured-image">
 					
 			<figure class="post-thumbnail">
-				<img width="1568" height="941" src="https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1568x941.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy" srcset="https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1568x941.jpg 1568w,https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-300x180.jpg 300w,https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1024x614.jpg 1024w,https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-768x461.jpg 768w,https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1536x922.jpg 1536w,https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas.jpg 2000w" sizes="(max-width: 1568px) 100vw, 1568px">			</figure>
+				<img width="1568" height="941" src="https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1568x941.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image vp-lazyload" alt="" loading="eager" srcset="data:image/svg+xml;base64 ,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSIzIiB2aWV3Qm94PSIwIDAgNSAzIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg== " data-src="https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1568x941.jpg" data-srcset="https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1568x941.jpg 1568w, https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-300x180.jpg 300w, https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1024x614.jpg 1024w, https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-768x461.jpg 768w, https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas-1536x922.jpg 1536w, https://katjavogt.github.io/wp-content/uploads/header-kmv-airplane1-by-jens-haas.jpg 2000w" data-sizes="auto">			</figure>
 
 								<div class="entry-header">
 						
@@ -362,14 +367,14 @@ body {
 <div class="vp-portfolio vp-uid-1fc5f6c7 vp-id-Z18zDdB" data-vp-layout="tiles" data-vp-items-style="fade" data-vp-items-click-action="url" data-vp-items-gap="15" data-vp-items-gap-vertical="" data-vp-pagination="load-more" data-vp-next-page-url="" data-vp-tiles-type="3|1,1|">
     <div class="vp-portfolio__preloader-wrap">
         <div class="vp-portfolio__preloader">
-            <img loading="lazy" src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/images/logo-dark.svg" alt="Visual Portfolio, Posts & Image Gallery for WordPress" width="20" height="20">
+            <noscript><img loading="lazy" src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/images/logo-dark.svg" alt="Visual Portfolio, Posts & Image Gallery for WordPress" width="20" height="20"></noscript><img loading="eager" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB2aWV3Qm94PSIwIDAgMSAxIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" alt="Visual Portfolio, Posts & Image Gallery for WordPress" width="20" height="20" data-src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/images/logo-dark.svg" data-sizes="auto" class=" vp-lazyload">
         </div>
     </div>
         <div class="vp-portfolio__items-wrap">
             
 <div class="vp-portfolio__items vp-portfolio__items-style-fade vp-portfolio__items-show-overlay-hover">
 
-        <div class="vp-portfolio__item-wrap vp-portfolio__item-uid-0e3bea20" data-vp-filter="">
+        <div class="vp-portfolio__item-wrap vp-portfolio__item-uid-367d4c71" data-vp-filter="">
                         <div class="vp-portfolio__item-popup" style="display: none;" data-vp-popup-img="https://katjavogt.github.io/wp-content/uploads/On-The-Road-nr.-336-by-Jens-Haas.jpeg" data-vp-popup-img-srcset="" data-vp-popup-img-size="600x450" data-vp-popup-md-img="https://katjavogt.github.io/wp-content/uploads/On-The-Road-nr.-336-by-Jens-Haas.jpeg" data-vp-popup-md-img-size="300x225" data-vp-popup-sm-img="https://katjavogt.github.io/wp-content/uploads/On-The-Road-nr.-336-by-Jens-Haas.jpeg" data-vp-popup-sm-img-size="150x113">
                                     <h3 class="vp-portfolio__item-popup-title">Zoom 2020</h3>
                                 </div>
@@ -8784,6 +8789,9 @@ body {
 <script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/lazysizes-config.min.js" id="lazysizes-config-js"></script>
 <script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/lazysizes/lazysizes.min.js" id="lazysizes-js"></script>
 <script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/lazyload.min.js" id="visual-portfolio-lazyload-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.js" id="fancybox-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/popup-gallery.min.js" id="visual-portfolio-popup-gallery-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/plugin-fancybox.min.js" id="visual-portfolio-plugin-fancybox-js"></script>
 <script src="https://katjavogt.github.io/wp-includes/js/imagesloaded.min.js" id="imagesloaded-js"></script>
 <script id="ie11-custom-properties-js-after">
 !function( d ) {
