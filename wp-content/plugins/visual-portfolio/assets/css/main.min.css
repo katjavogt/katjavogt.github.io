@@ -18,6 +18,7 @@
 [data-vp-layout="slider"] .vp-portfolio__item-wrap {float: none;padding: 0 !important;margin-top: 0 !important;margin-bottom: 0 !important;margin-left: 0 !important;}
 .vp-portfolio__item .vp-portfolio__item-img img, .vp-portfolio__item .vp-portfolio__item-img a, .vp-portfolio__item .vp-portfolio__thumbnail-img img {display: block;width: 100%;height: auto;}
 .vp-portfolio__item-img, .vp-portfolio__thumbnail-img {position: relative;}
+.vp-portfolio__item .vp-portfolio__item-img a {position: unset;}
 .vp-portfolio__layout-elements {display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;width: calc(100% + var(--vp-elements__gap));margin-top: calc(-1 * var(--vp-elements__gap));margin-left: calc(-1 * var(--vp-elements__gap));}
 .vp-portfolio__layout-elements>* {margin-top: var(--vp-elements__gap);margin-left: var(--vp-elements__gap);}
 .vp-portfolio__layout-elements-align-left {-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
