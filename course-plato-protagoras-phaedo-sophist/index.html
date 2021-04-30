@@ -8,26 +8,46 @@
 <link rel="dns-prefetch" href="//s.w.org">
 
 
+<link rel="stylesheet" id="visual-portfolio-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/main.min.css" media="all">
+<link rel="stylesheet" id="fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.css" media="all">
+<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/popup-fancybox.min.css" media="all">
+<style id="visual-portfolio-popup-fancybox-inline-css">
+.vp-fancybox .fancybox-bg { background-color: #1e1e1e; }
+</style>
 <link rel="stylesheet" id="wp-block-library-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/style.min.css" media="all">
 <link rel="stylesheet" id="wp-block-library-theme-css" href="https://katjavogt.github.io/wp-includes/css/dist/block-library/theme.min.css" media="all">
+<link rel="stylesheet" id="vpf-twentytwentyone-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/theme-twentytwentyone.min.css" media="all">
 <link rel="stylesheet" id="twenty-twenty-one-style-css" href="https://katjavogt.github.io/wp-content/themes/twentytwentyone/style.css" media="all">
 <style id="twenty-twenty-one-style-inline-css">
 :root{--global--color-background: #380736;--global--color-primary: #fff;--global--color-secondary: #fff;--button--color-background: #fff;--button--color-text-hover: #fff;--table--stripes-border-color: rgba(240, 240, 240, 0.15);--table--stripes-background-color: rgba(240, 240, 240, 0.15);}
 </style>
 <link rel="stylesheet" id="twenty-twenty-one-print-style-css" href="https://katjavogt.github.io/wp-content/themes/twentytwentyone/assets/css/print.css" media="print">
-<link rel="stylesheet" id="wp-featherlight-css" href="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/css/wp-featherlight.min.css" media="all">
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
-<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 
 
 
 
 
 
+<script type="text/javascript">
+/* <![CDATA[ */
+var VPData = {"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true},"screenSizes":[320,576,768,992,1200]};
+/* ]]> */
+</script>
 <style id="custom-background-css">
 body.custom-background { background-color: #380736; }
 </style>
-			<style id="wp-custom-css">
+	        <style type="text/css">
+            /* If html does not have either class, do not show lazy loaded images. */
+            html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
+                display: none;
+            }
+        </style>
+        <script>
+            document.documentElement.classList.add(
+                'vp-lazyload-enabled'
+            );
+        </script>
+        		<style id="wp-custom-css">
 			
 * {
 	font-family: Times, serif !important;
@@ -61,10 +81,13 @@ body.custom-background { background-color: #380736; }
 button.fancybox-button--share, button.fancybox-button--fsenter, button.fancybox-button--zoom {
 	display: none !important;
 }
-		</style>
+
+.vp-portfolio__item-popup-description {
+	font-size: var(--global--font-size-xs);
+}		</style>
 		</head>
 
-<body class="page-template-default page page-id-1512 custom-background wp-embed-responsive wp-featherlight-captions is-dark-theme no-js singular has-main-navigation">
+<body class="page-template-default page page-id-1512 custom-background wp-embed-responsive is-dark-theme no-js singular has-main-navigation">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
@@ -429,7 +452,11 @@ button.fancybox-button--share, button.fancybox-button--fsenter, button.fancybox-
 </script>
 <script src="https://katjavogt.github.io/wp-content/themes/twentytwentyone/assets/js/primary-navigation.js" id="twenty-twenty-one-primary-navigation-script-js"></script>
 <script src="https://katjavogt.github.io/wp-content/themes/twentytwentyone/assets/js/responsive-embeds.js" id="twenty-twenty-one-responsive-embeds-script-js"></script>
-<script src="https://katjavogt.github.io/wp-content/plugins/wp-featherlight/js/wpFeatherlight.pkgd.min.js" id="wp-featherlight-js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.js" id="fancybox-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/popup-gallery.min.js" id="visual-portfolio-popup-gallery-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/plugin-fancybox.min.js" id="visual-portfolio-plugin-fancybox-js"></script>
 	<script>
 	/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
 	</script>
