@@ -38,6 +38,7 @@ figcaption {color: currentColor;font-size: 1rem;line-height: 1.7;margin-top: 10p
 .alignleft figcaption, .alignright figcaption, .alignleft .wp-caption, .alignright .wp-caption, .alignleft .wp-caption-text, .alignright .wp-caption-text, .alignleft .wp-block-embed figcaption, .alignright .wp-block-embed figcaption {margin-bottom: 0;}
 .page-content .wp-smiley, .entry-content .wp-smiley, .comment-content .wp-smiley {border: none;margin-bottom: 0;margin-top: 0;padding: 0;}
 select {border: 3px solid #39414d;border-radius: 0;color: #28303d;font-size: 1.125rem;-moz-appearance: none;-webkit-appearance: none;appearance: none;padding: 10px 30px 10px 10px;background: #fff url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'10\' height=\'10\' fill=\'%2328303d\'><polygon points=\'0,0 10,0 5,5\'/></svg>") no-repeat;background-position: right 10px top 60%;}
+select:focus {border: 3px solid #39414d;border-radius: 0;color: #28303d;font-size: 1.125rem;-moz-appearance: none;-webkit-appearance: none;appearance: none;padding: 10px 30px 10px 10px;background: #fff url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'10\' height=\'10\' fill=\'%2328303d\'><polygon points=\'0,0 10,0 5,5\'/></svg>") no-repeat;background-position: right 10px top 60%;}
 a {cursor: pointer;color: #28303d;text-underline-offset: 3px;text-decoration-skip-ink: all;}
 a:hover {text-decoration-style: dotted;text-decoration-skip-ink: none;}
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {outline: 2px solid transparent;text-decoration: underline 1px dotted currentColor;text-decoration-skip-ink: none;background: rgba(255,255,255,.9);}
@@ -342,6 +343,8 @@ pre.wp-block-preformatted {overflow-x: auto;white-space: pre !important;font-siz
 .wp-block[data-align=full] .wp-block-pullquote:not(.is-style-solid-color) blockquote {padding: 0 40px;}
 .wp-block[data-align=left] .wp-block-pullquote.is-style-solid-color {padding: 20px;}
 .wp-block[data-align=right] .wp-block-pullquote.is-style-solid-color {padding: 20px;}
+.wp-block-query.has-background {padding: 20px;}
+@media only screen and (min-width: 482px) {.wp-block-query.has-background {padding: 30px;}}
 .wp-block-quote {position: relative;border-left: none;margin: 30px auto 30px 25px;}
 .wp-block-quote p {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;font-size: 1.25rem;font-style: normal;font-weight: 700;line-height: 1.7;}
 .wp-block-quote strong {font-weight: bolder;}
