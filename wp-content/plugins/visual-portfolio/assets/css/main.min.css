@@ -25,7 +25,7 @@
 .vp-portfolio__layout-elements-align-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
 .vp-portfolio__layout-elements-align-right {-webkit-box-pack: end;-ms-flex-pack: end;justify-content: flex-end;}
 .vp-portfolio__layout-elements-align-between {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
-.vp-portfolio figure.vp-portfolio__item {margin: 0;}
+.vp-portfolio figure.vp-portfolio__item {display: block;margin: 0;}
 [class^=wp-block-]:not(.wp-block-gallery) figcaption.vp-portfolio__item-meta, .vp-portfolio figcaption.vp-portfolio__item-meta {margin-bottom: 0;font-style: inherit;}
 .vp-portfolio__preloader-wrap {visibility: visible;opacity: 1;-webkit-transition: var(--vp-transition-duration) opacity,var(--vp-transition-duration) visibility;-o-transition: var(--vp-transition-duration) opacity,var(--vp-transition-duration) visibility;transition: var(--vp-transition-duration) opacity,var(--vp-transition-duration) visibility;will-change: opacity,visibility;}
 .vp-portfolio__preloader {position: absolute;left: 50%;width: 20px;height: 20px;margin-top: 45px;margin-left: -10px;}
