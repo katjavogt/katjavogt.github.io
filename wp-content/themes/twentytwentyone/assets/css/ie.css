@@ -40,12 +40,12 @@ template {display: none;}
 .entry-content .wp-audio-shortcode {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
 @media only screen and (min-width: 482px) {.entry-content .wp-audio-shortcode {max-width: min(calc(100vw - 100px),610px);}}
 @media only screen and (min-width: 822px) {.entry-content .wp-audio-shortcode {max-width: min(calc(100vw - 200px),610px);}}
-.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
-@media only screen and (min-width: 482px) {.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: min(calc(100vw - 100px),610px);}}
-@media only screen and (min-width: 822px) {.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: min(calc(100vw - 200px),610px);}}
-*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
-@media only screen and (min-width: 482px) {*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: min(calc(100vw - 100px),610px);}}
-@media only screen and (min-width: 822px) {*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce) {max-width: min(calc(100vw - 200px),610px);}}
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
+@media only screen and (min-width: 482px) {.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: min(calc(100vw - 100px),610px);}}
+@media only screen and (min-width: 822px) {.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: min(calc(100vw - 200px),610px);}}
+*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
+@media only screen and (min-width: 482px) {*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: min(calc(100vw - 100px),610px);}}
+@media only screen and (min-width: 822px) {*[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator) {max-width: min(calc(100vw - 200px),610px);}}
 .default-max-width {max-width: calc(100vw - 30px);margin-left: auto;margin-right: auto;}
 @media only screen and (min-width: 482px) {.default-max-width {max-width: min(calc(100vw - 100px),610px);}}
 @media only screen and (min-width: 822px) {.default-max-width {max-width: min(calc(100vw - 200px),610px);}}
@@ -673,8 +673,6 @@ hr.wp-block-separator.is-style-dots:before {color: #28303d;font-size: 2.25rem;le
 .wp-block-social-links a:focus {color: #28303d;}
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color a {color: #28303d;}
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link, .wp-block-social-links.is-style-twentytwentyone-social-icons-color.has-icon-background-color.has-icon-background-color .wp-social-link {background: none;}
-.wp-block-spacer {display: block;margin-bottom: 0 !important;margin-top: 0 !important;}
-@media only screen and (max-width: 481px) {.wp-block-spacer[style] {height: 20px !important;}}
 table, .wp-block-table {width: 100%;min-width: 240px;border-collapse: collapse;}
 table thead, table tfoot, .wp-block-table thead, .wp-block-table tfoot {text-align: center;}
 table th, .wp-block-table th {font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}

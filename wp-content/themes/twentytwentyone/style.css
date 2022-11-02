@@ -40,7 +40,7 @@ template {display: none;}
 :root {--responsive--spacing-horizontal: calc(2 * var(--global--spacing-horizontal) * .6);--responsive--aligndefault-width: calc(100vw - var(--responsive--spacing-horizontal));--responsive--alignwide-width: calc(100vw - var(--responsive--spacing-horizontal));--responsive--alignfull-width: 100%;--responsive--alignright-margin: var(--global--spacing-horizontal);--responsive--alignleft-margin: var(--global--spacing-horizontal);}
 @media only screen and (min-width: 482px) {:root {--responsive--aligndefault-width: min(calc(100vw - 4 * var(--global--spacing-horizontal)),610px);--responsive--alignwide-width: calc(100vw - 4 * var(--global--spacing-horizontal));--responsive--alignright-margin: calc(.5 * ( 100vw - var(--responsive--aligndefault-width) ));--responsive--alignleft-margin: calc(.5 * ( 100vw - var(--responsive--aligndefault-width) ));}}
 @media only screen and (min-width: 822px) {:root {--responsive--aligndefault-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)),610px);--responsive--alignwide-width: min(calc(100vw - 8 * var(--global--spacing-horizontal)),1240px);}}
-.post-thumbnail, .entry-content .wp-audio-shortcode, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), .default-max-width {max-width: var(--responsive--aligndefault-width);margin-left: auto;margin-right: auto;}
+.post-thumbnail, .entry-content .wp-audio-shortcode, .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator), *[class*=inner-container] > *:not(.entry-content):not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator), .default-max-width {max-width: var(--responsive--aligndefault-width);margin-left: auto;margin-right: auto;}
 .widget-area, .pagination, .comments-pagination, .post-navigation, .site-footer, .site-header, .alignwide, .wide-max-width {max-width: var(--responsive--alignwide-width);margin-left: auto;margin-right: auto;}
 .alignfull, .wp-block-group .wp-block-group__inner-container > *.alignfull, .full-max-width {max-width: var(--responsive--alignfull-width);width: var(--responsive--alignfull-width);margin-left: auto;margin-right: auto;}
 @media only screen and (min-width: 482px) {.alignfull, .full-max-width {max-width: var(--responsive--alignfull-width);width: auto;margin-left: auto;margin-right: auto;}}
@@ -447,8 +447,6 @@ hr.wp-block-separator.is-style-dots:before {color: var(--separator--border-color
 .wp-block-social-links a:focus {color: var(--global--color-primary);}
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color a {color: var(--global--color-primary);}
 .wp-block-social-links.is-style-twentytwentyone-social-icons-color .wp-social-link, .wp-block-social-links.is-style-twentytwentyone-social-icons-color.has-icon-background-color.has-icon-background-color .wp-social-link {background: none;}
-.wp-block-spacer {display: block;margin-bottom: 0 !important;margin-top: 0 !important;}
-@media only screen and (max-width: 481px) {.wp-block-spacer[style] {height: var(--global--spacing-unit) !important;}}
 table, .wp-block-table {width: 100%;min-width: 240px;border-collapse: collapse;}
 table thead, table tfoot, .wp-block-table thead, .wp-block-table tfoot {text-align: center;}
 table th, .wp-block-table th {font-family: var(--heading--font-family);}
