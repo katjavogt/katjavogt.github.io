@@ -630,6 +630,7 @@ ul.wp-block-rss.is-grid li {margin: 0 1em 1em 0;width: 100%;}
 .wp-block-tag-cloud.is-style-outline a {border: 1px solid;font-size: unset !important;margin-right: 0;padding: 1ch 2ch;text-decoration: none !important;}
 .wp-block-table {overflow-x: auto;}
 .wp-block-table table {border-collapse: collapse;width: 100%;}
+.wp-block-table td, .wp-block-table th {border: 1px solid;padding: .5em;}
 .wp-block-table .has-fixed-layout {table-layout: fixed;width: 100%;}
 .wp-block-table .has-fixed-layout td, .wp-block-table .has-fixed-layout th {word-break: break-word;}
 .wp-block-table.aligncenter, .wp-block-table.alignleft, .wp-block-table.alignright {display: table;width: auto;}
