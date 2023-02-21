@@ -3,6 +3,7 @@
 body.admin-bar .vp-fancybox {top: 32px;height: calc(100% - 32px);}
 @media screen and (max-width: 782px) {body.admin-bar .vp-fancybox {top: 42px;height: calc(100% - 42px);}}
 @media screen and (max-width: 600px) {body.admin-bar .vp-fancybox {top: 0;height: 100%;}}
+.vp-fancybox .fancybox-slide--iframe .fancybox-content {background: none;}
 .vp-fancybox .fancybox-caption__body {font-size: 12px;color: #fff;}
 .vp-fancybox .fancybox-caption__body h3 {color: inherit;}
 .vp-fancybox .fancybox-caption__body a {color: inherit;}
