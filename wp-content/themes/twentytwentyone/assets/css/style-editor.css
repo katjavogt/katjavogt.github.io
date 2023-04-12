@@ -111,8 +111,6 @@ a:hover {text-decoration-style: dotted;text-decoration-skip-ink: none;}
 .wp-block-file .wp-block-file__button:focus {outline-offset: inherit;outline: inherit;}
 .wp-block-gallery figcaption {margin-bottom: 0;}
 .wp-block-gallery figcaption a {color: var(--global--color-white);}
-.wp-block-group {display: block;display: flow-root;clear: both;}
-.wp-block-group:before, .wp-block-group:after {content: "";display: block;clear: both;}
 .wp-block-group.has-background {padding: var(--global--spacing-vertical);}
 [data-align=full] .wp-block-group.has-background {margin-top: 0;margin-bottom: 0;}
 .wp-block-group.is-style-twentytwentyone-border {border: calc(3 * var(--separator--height)) solid var(--global--color-border);padding: var(--global--spacing-vertical);}
@@ -186,8 +184,8 @@ dt {font-family: var(--definition-term--font-family);font-weight: bold;}
 .wp-block-media-text.has-child-selected > .wp-block-media-text__content > *:nth-last-child(2), .wp-block-media-text.is-selected > .wp-block-media-text__content > *:nth-last-child(2) {margin-bottom: 0;}
 .wp-block-media-text .wp-block-media-text__content {padding: var(--global--spacing-horizontal);}
 .wp-block-media-text.is-style-twentytwentyone-border {border: calc(3 * var(--separator--height)) solid var(--global--color-border);}
-.wp-block-navigation .wp-block-navigation__container {background: var(--global--color-background);padding: 0;}
-.wp-block-navigation .wp-block-navigation-link .wp-block-navigation-link__content {padding: var(--primary-nav--padding);}
+.wp-block-navigation [data-block] {margin-top: revert;margin-bottom: revert;}
+.wp-block-navigation .wp-block-navigation__container {background: var(--global--color-background);}
 .wp-block-navigation .wp-block-navigation-link .wp-block-navigation-link__label {font-family: var(--primary-nav--font-family);font-size: var(--primary-nav--font-size);font-weight: var(--primary-nav--font-weight);}
 .wp-block-navigation .has-child .wp-block-navigation__container {box-shadow: var(--global--elevation);}
 .wp-block-navigation:not(.has-text-color) .wp-block-navigation-link > a:hover, .wp-block-navigation:not(.has-text-color) .wp-block-navigation-link > a:focus {color: var(--primary-nav--color-link-hover);}
