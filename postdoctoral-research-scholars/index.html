@@ -64,9 +64,9 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 .wp-block-comments a:where(:not(.wp-element-button)){text-decoration: underline;}
 .wp-block-comments a:where(:not(.wp-element-button)):hover{text-decoration: none;}
 </style>
-<link rel="stylesheet" id="visual-portfolio-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/main.min.css" media="all">
+<link rel="stylesheet" id="visual-portfolio-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/build/assets/css/main.css" media="all">
 <link rel="stylesheet" id="fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.css" media="all">
-<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/css/popup-fancybox.min.css" media="all">
+<link rel="stylesheet" id="visual-portfolio-popup-fancybox-css" href="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/build/assets/css/popup-fancybox.css" media="all">
 <style id="visual-portfolio-popup-fancybox-inline-css">
 .vp-fancybox .fancybox-bg { background-color: #1e1e1e; }
 </style>
@@ -259,25 +259,26 @@ body{--wp--preset--duotone--default-filter:url(#wp-duotone-default-filter);}
 
 <script type="text/javascript">
 /* <![CDATA[ */
-var VPData = {"version":"3.1.3","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
+var VPData = {"version":"3.2.3","pro":false,"__":{"couldnt_retrieve_vp":"Couldn't retrieve Visual Portfolio ID.","pswp_close":"Close (Esc)","pswp_share":"Share","pswp_fs":"Toggle fullscreen","pswp_zoom":"Zoom in\/out","pswp_prev":"Previous (arrow left)","pswp_next":"Next (arrow right)","pswp_share_fb":"Share on Facebook","pswp_share_tw":"Tweet","pswp_share_pin":"Pin it","fancybox_close":"Close","fancybox_next":"Next","fancybox_prev":"Previous","fancybox_error":"The requested content cannot be loaded. <br \/> Please try again later.","fancybox_play_start":"Start slideshow","fancybox_play_stop":"Pause slideshow","fancybox_full_screen":"Full screen","fancybox_thumbs":"Thumbnails","fancybox_download":"Download","fancybox_share":"Share","fancybox_zoom":"Zoom"},"settingsPopupGallery":{"enable_on_wordpress_images":true,"vendor":"fancybox","deep_linking":false,"deep_linking_url_to_share_images":false,"show_arrows":true,"show_counter":true,"show_zoom_button":true,"show_fullscreen_button":true,"show_share_button":true,"show_close_button":true,"show_thumbs":true,"show_download_button":false,"show_slideshow":false,"click_to_zoom":true,"restore_focus":true},"screenSizes":[320,576,768,992,1200]};
 /* ]]> */
 </script>
-        <noscript>
-            <style type="text/css">
-                .vp-portfolio__preloader-wrap{display:none}.vp-portfolio__items-wrap,.vp-portfolio__filter-wrap,.vp-portfolio__sort-wrap,.vp-portfolio__pagination-wrap{visibility:visible;opacity:1}.vp-portfolio__item .vp-portfolio__item-img noscript+img{display:none}.vp-portfolio__thumbnails-wrap{display:none}            </style>
-        </noscript>
-                <style type="text/css">
-            /* If html does not have either class, do not show lazy loaded images. */
-            html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
-                display: none;
-            }
-        </style>
-        <script>
-            document.documentElement.classList.add(
-                'vp-lazyload-enabled'
-            );
-        </script>
-        <style id="wp-fonts-local">
+		<noscript>
+			<style type="text/css">
+				.vp-portfolio__preloader-wrap{display:none}.vp-portfolio__filter-wrap,.vp-portfolio__items-wrap,.vp-portfolio__pagination-wrap,.vp-portfolio__sort-wrap{opacity:1;visibility:visible}.vp-portfolio__item .vp-portfolio__item-img noscript+img,.vp-portfolio__thumbnails-wrap{display:none}
+			</style>
+		</noscript>
+				<style type="text/css">
+			/* If html does not have either class, do not show lazy loaded images. */
+			html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
+				display: none;
+			}
+		</style>
+		<script>
+			document.documentElement.classList.add(
+				'vp-lazyload-enabled'
+			);
+		</script>
+		<style id="wp-fonts-local">
 @font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:url('https://katjavogt.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:url('https://katjavogt.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}
 @font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('https://katjavogt.github.io/wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}
@@ -428,7 +429,7 @@ var VPData = {"version":"3.1.3","pro":false,"__":{"couldnt_retrieve_vp":"Couldn'
 <script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
 <script src="https://katjavogt.github.io/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 <script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/vendor/fancybox/dist/jquery.fancybox.min.js" id="fancybox-js"></script>
-<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/popup-gallery.min.js" id="visual-portfolio-popup-gallery-js"></script>
-<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/assets/js/plugin-fancybox.min.js" id="visual-portfolio-plugin-fancybox-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/build/assets/js/popup-gallery.js" id="visual-portfolio-popup-gallery-js"></script>
+<script src="https://katjavogt.github.io/wp-content/plugins/visual-portfolio/build/assets/js/plugin-fancybox.js" id="visual-portfolio-plugin-fancybox-js"></script>
 </body>
 </html>
