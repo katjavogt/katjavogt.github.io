@@ -24,7 +24,9 @@ figure.wp-block-gallery.has-nested-images {align-items: normal;}
 .wp-block-gallery.has-nested-images figure.wp-block-image {box-sizing: border-box;display: flex;flex-direction: column;flex-grow: 1;justify-content: center;max-width: 100%;position: relative;}
 .wp-block-gallery.has-nested-images figure.wp-block-image>a, .wp-block-gallery.has-nested-images figure.wp-block-image>div {flex-direction: column;flex-grow: 1;margin: 0;}
 .wp-block-gallery.has-nested-images figure.wp-block-image img {display: block;height: auto;max-width: 100% !important;width: auto;}
-.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {background: linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,rgba(0,0,0,0));bottom: 0;box-sizing: border-box;color: #fff;font-size: 13px;left: 0;margin-bottom: 0;max-height: 60%;overflow: auto;padding: 0 8px 8px;position: absolute;scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);scrollbar-gutter: stable both-edges;scrollbar-width: thin;text-align: center;width: 100%;will-change: transform;}
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption, .wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {bottom: 0;left: 0;max-height: 100%;position: absolute;right: 0;}
+.wp-block-gallery.has-nested-images figure.wp-block-image:has(figcaption):before {-webkit-backdrop-filter: blur(3px);backdrop-filter: blur(3px);content: "";height: 100%;-webkit-mask-image: linear-gradient(0deg,#000 20%,rgba(0,0,0,0));mask-image: linear-gradient(0deg,#000 20%,rgba(0,0,0,0));max-height: 40%;}
+.wp-block-gallery.has-nested-images figure.wp-block-image figcaption {background: linear-gradient(0deg,rgba(0,0,0,.4),rgba(0,0,0,0));box-sizing: border-box;color: #fff;font-size: 13px;margin: 0;overflow: auto;padding: 1em;scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);scrollbar-gutter: stable both-edges;scrollbar-width: thin;text-align: center;text-shadow: 0 0 1.5px #000;will-change: transform;}
 .wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar {height: 12px;width: 12px;}
 .wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar-track {background-color: initial;}
 .wp-block-gallery.has-nested-images figure.wp-block-image figcaption::-webkit-scrollbar-thumb {background-clip: padding-box;background-color: initial;border: 3px solid rgba(0,0,0,0);border-radius: 8px;}
@@ -35,7 +37,8 @@ figure.wp-block-gallery.has-nested-images {align-items: normal;}
 .wp-block-gallery.has-nested-images figure.wp-block-image figcaption a {color: inherit;}
 .wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border img {box-sizing: border-box;}
 .wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>a, .wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border>div, .wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>a, .wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded>div {flex: 1 1 auto;}
-.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border figcaption, .wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded figcaption {background: none;color: inherit;flex: initial;margin: 0;padding: 10px 10px 9px;position: relative;}
+.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border figcaption, .wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded figcaption {background: none;color: inherit;flex: initial;margin: 0;padding: 10px 10px 9px;position: relative;text-shadow: none;}
+.wp-block-gallery.has-nested-images figure.wp-block-image.has-custom-border:before, .wp-block-gallery.has-nested-images figure.wp-block-image.is-style-rounded:before {content: none;}
 .wp-block-gallery.has-nested-images figcaption {flex-basis: 100%;flex-grow: 1;text-align: center;}
 .wp-block-gallery.has-nested-images:not(.is-cropped) figure.wp-block-image:not(#individual-image) {margin-bottom: auto;margin-top: 0;}
 .wp-block-gallery.has-nested-images.is-cropped figure.wp-block-image:not(#individual-image) {align-self: inherit;}
