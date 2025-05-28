@@ -13,3 +13,5 @@
 .vp-fancybox .fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar {width: var(--vp-popup--thumbnails--scrollbar__size);}
 .vp-fancybox .fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-track {background: var(--vp-popup--thumbnails--scrollbar-track__background-color);box-shadow: none;}
 .vp-fancybox .fancybox-thumbs-y .fancybox-thumbs__list::-webkit-scrollbar-thumb {background: var(--vp-popup--thumbnails--scrollbar-thumb__background-color);border-radius: var(--vp-popup--thumbnails--scrollbar-thumb__border-radius);}
+.fancybox-share__button--x {background: #000;}
+.fancybox-share__button--x:hover {background: #292929;}
