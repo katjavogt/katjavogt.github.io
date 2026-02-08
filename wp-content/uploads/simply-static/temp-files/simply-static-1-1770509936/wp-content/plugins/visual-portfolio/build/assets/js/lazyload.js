@@ -1,0 +1,1 @@
+document.addEventListener("lazybeforesizes",function(e){if(e.detail&&e.detail.width&&e.target){var t=e.target.closest(":not(picture)");t&&(e.detail.width=t.clientWidth||e.detail.width)}}),document.addEventListener("lazybeforeunveil",function(e){var t=e.target.previousElementSibling;t&&t.matches("noscript")&&t.remove()});
