@@ -106,12 +106,26 @@ h1, .entry-title, .wp-block-post-title {
    text-align: center !important;
 }
 
-.figcaption.wp-element-caption {
-       font-size: 1.1rem !important;
+/* Fix caption positioning */
+.wp-block-image figcaption {
+  position: static !important;
+  inset: auto !important;
+  background: none !important;
+  backdrop-filter: none !important;
 }
 
-.has-small-font-size {
-       font-size: 1.1rem !important;
+/* Remove blur overlay layer */
+.wp-block-image::before,
+.wp-block-image::after,
+.wp-block-image figure::before,
+.wp-block-image figure::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Some themes apply blur directly to the image */
+.wp-block-image img {
+  filter: none !important;
 }
 
 /* Remove vertical spacing from ALL submenu containers (any depth) */
