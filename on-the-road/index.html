@@ -137,16 +137,21 @@ body {
   Gutenberg-safe spacing control
 ========================================================= */
 
-/* Force spacing between ALL direct content blocks */
-.wp-block-post-content > * {
- margin-top: 0 !important;
- margin-bottom: 2.5rem !important;
-}
-
 /* Space above main content */
 main.site-main,
 .wp-site-blocks main {
     padding-top: 4rem;
+}
+
+/* Force spacing between ALL direct content blocks */
+.wp-block-post-content > * {
+ margin-top: 0 !important;
+ margin-bottom: 4rem !important;
+}
+
+/* Section-level spacing: videos */
+.wp-block-post-content .wp-block-embed {
+margin-bottom: 4rem !important;
 }
 
 /* H2 styling */
